@@ -1,7 +1,4 @@
 import Moviebox from "../realcomponents/Moviebox.js";
-import bookmarkimg from "../assets/icon-bookmark-empty.svg";
-import img from '../assets/thumbnails/1998/regular/medium.jpg'
-
 import data from "../data.json";
 
 

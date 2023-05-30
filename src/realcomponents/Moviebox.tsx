@@ -2,7 +2,6 @@ import "./cinema.css";
 import img from "../assets/icon-category-movie.svg";
 import img2 from "../assets/icon-category-tv.svg";
 import { useState } from "react";
-import data from "../data.json";
 import bookmarkimg from "../assets/icon-bookmark-empty.svg";
 import bookmarkfull from "../assets/icon-bookmark-full.svg";
 
