@@ -1,0 +1,297 @@
+@font-face {
+  font-family: space-mono;
+  src: url("./assets/Fonts/SpaceMono-Bold.ttf");
+}
+@font-face {
+  font-family: baster;
+  src: url("./assets/Fonts/Blockletter.otf");
+}
+
+:root {
+  --mainred: rgb(252, 71, 71);
+  --maindarkBlue: rgb(16, 20, 30);
+  --mainpurple: rgb(90, 105, 143);
+  --mainblue: rgb(22, 29, 47);
+  --mainwhite: rgb(255, 255, 255);
+}
+body {
+  background-color: var(--maindarkBlue);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  background-color: var(--maindarkBlue);
+  /* padding-bottom: 500px; */
+}
+footer {
+  height: 10rem;
+  width: 100%;
+}
+header {
+  width: 10%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header {
+  width: 70%;
+  height: 70%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  gap: 40px;
+  margin-top: 10px;
+  background-color: var(--mainblue);
+}
+.active {
+  color: white;
+
+  scale: 1.3;
+}
+#logoimg {
+  margin-bottom: 12px;
+}
+h2 {
+  font-size: 1.5em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.body {
+  width: 90%;
+  height: 100%;
+
+}
+
+.searchbox {
+  width: 100%;
+  height: 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbox-div {
+  width: 90%;
+  height: 90%;
+
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.searchbox-div input {
+  width: 80%;
+  height: 50%;
+  background-color: var(--maindarkBlue);
+  border: none;
+  color: white;
+}
+p {
+  color: white;
+}
+.content {
+  width: 100%;
+  height: 90%;
+
+}
+
+/* Movie */
+
+.movie-container {
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-box {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.movie-header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  color: var(--mainwhite);
+  font-family: space-mono;
+}
+
+.movie-content {
+  width: 100%;
+  height: 80%;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+/* homepage */
+
+.homepage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.trending {
+  width: 100%;
+  height: 45vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trending-box {
+  /* width: fit-content; */
+  width: 95%;
+  /* overflow-y: hidden; */
+  height: 90%;
+
+  /* overflow-x: scroll; */
+}
+
+.trending-name {
+  width: 100%;
+  height: 15vh;
+
+  display: flex;
+  justify-content: flex-start;
+  color: var(--mainwhite);
+  align-items: center;
+  font-family: space-mono;
+}
+.trending-content {
+  /* width: 100%; */
+  height: 40vh;
+  /* display: grid; */
+  gap: 30px;
+
+  /* grid-auto-flow: column; */
+  /* overflow-x: auto; */
+  /* grid-auto-columns: 23%; */
+  display: flex;
+  flex-wrap: no-wrap;
+  overflow-x: auto;
+  margin: 20px;
+  overscroll-behavior-inline: contain;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.recomended {
+  width: 100%;
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recomended-box {
+  width: 95%;
+  height: 100%;
+
+}
+
+.recomended-name {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: flex-start;
+
+  color: var(--mainwhite);
+  margin-top: 150px;
+  font-family: space-mono;
+}
+
+.recomended-content {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 90px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--maindarkBlue);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--mainpurple);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mainblue);
+}
+
+
+@media only screen and (max-width: 500px) {
+  .App {
+    flex-direction: column;
+  }
+
+  header {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    
+  }
+  .header {
+    width: 90%;
+    height: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    flex-direction: row;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding: 5px;
+ 
+  }
+  #logoimg {
+    margin-bottom: 0px;
+    margin-right: 15%;
+  }
+
+  .body {
+    width: 100%;
+  }
+}
